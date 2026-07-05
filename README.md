@@ -2,6 +2,8 @@
 
 # This will be a script that will be able to generate a gui
 
+TO USE DO local MainModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/random14671/Random-Gui/refs/heads/main/Main.luau"))()
+
 EXAMPLE :
 
 local window = MainModule:CreateWindow({
