@@ -34,7 +34,7 @@ local ObjectsToTweenTransparency = {
 	"Frame",
 	"UIStroke",
 	"TextLabel",
-	"TextButton"
+	--"TextButton"
 }
 
 -- Tween --
