@@ -4,7 +4,7 @@
 
 TO USE DO ```local MainModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/random14671/Random-Gui/refs/heads/main/Main.luau"))()```
 ```
-EXAMPLE :
+--EXAMPLE :
 
 local window = MainModule:CreateWindow({
 	MainTitle = "Cool Cheats",
