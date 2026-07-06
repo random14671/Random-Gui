@@ -6,6 +6,8 @@ TO USE DO ```local MainModule = loadstring(game:HttpGet("https://raw.githubuserc
 ```
 --EXAMPLE :
 
+local MainModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/random14671/Random-Gui/refs/heads/main/Main.luau"))()
+
 local window = MainModule:CreateWindow({
 	MainTitle = "Cool Cheats",
 	MainFont = Enum.Font.Code,
