@@ -59,6 +59,9 @@ local function WindowEnabled(Window : Frame, state : boolean)
 			if table.find(ObjectsToTweenTransparency, v.ClassName) then
 				local customTransparency = WindowData.SavedTransparency[v] or 0
 				v.Transparency = customTransparency
+				if v:IsA("TextLabel") then
+					v.TextTransparency = 0
+				end
 			end
 		end
 	else
@@ -67,6 +70,11 @@ local function WindowEnabled(Window : Frame, state : boolean)
 			if table.find(ObjectsToTweenTransparency, v.ClassName) then
 				local vt = TweenService:Create(v, WindowTween, {Transparency = 1})
 				vt:Play()
+				if v:IsA("TextLabel") then
+					vt.Completed:Once(function()
+						v.TextTransparency = 1
+					end
+				end
 			end
 		end
 	end
